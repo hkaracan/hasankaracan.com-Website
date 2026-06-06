@@ -29,14 +29,14 @@ const HoverStreamVideo = ({ isHovered }: { isHovered: boolean }) => {
   return (
     <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden flex items-center justify-center bg-[#FFF200]">
       <img
-        src="./website-2d-idle-anim-static.webp"
+        src={`${import.meta.env.BASE_URL}website-2d-idle-anim-static.webp`}
         alt=""
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         style={{ opacity: isVideoLoaded ? 0 : 1, transition: 'opacity 0.3s ease-in-out', zIndex: 1 }}
       />
       <video
         ref={videoRef}
-        src="./website-2d-idle-anim.webm"
+        src={`${import.meta.env.BASE_URL}website-2d-idle-anim.webm`}
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         style={{ opacity: isVideoLoaded ? 1 : 0, transition: 'opacity 0.3s ease-in-out', zIndex: 2 }}
         muted
@@ -69,14 +69,14 @@ const HoverLabVideo = ({ isHovered }: { isHovered: boolean }) => {
   return (
     <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden flex items-center justify-center bg-[#00E5FF]">
       <img
-        src="./website-3d-idle-anim-static.webp"
+        src={`${import.meta.env.BASE_URL}website-3d-idle-anim-static.webp`}
         alt=""
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         style={{ opacity: isVideoLoaded ? 0 : 1, transition: 'opacity 0.3s ease-in-out', zIndex: 1 }}
       />
       <video
         ref={videoRef}
-        src="./website-3d-idle-anim.webm"
+        src={`${import.meta.env.BASE_URL}website-3d-idle-anim.webm`}
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         style={{ opacity: isVideoLoaded ? 1 : 0, transition: 'opacity 0.3s ease-in-out', zIndex: 2 }}
         muted
